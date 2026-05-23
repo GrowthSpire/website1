@@ -1,0 +1,199 @@
+		body{
+			margin:0px
+		}
+		ul{
+			margin:0px;
+			padding:0px;
+		}
+		header{
+			display: flex;
+			justify-content: space-between;
+			padding: 0px 50px;
+			align-items: center;
+		}
+		
+		#links-box ul{
+			display: flex;
+			list-style-type: none;
+			gap: 30px;
+		}
+		#links-box ul li a{
+			color: blue;
+			text-decoration: none;
+		}
+		#links-box ul li a:hover{
+			color: black;
+			text-decoration: underline;
+		}
+		img#logo-image{
+			height: 100px;
+		}
+
+		@media(max-width: 768px){
+			header{
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				padding: 0px 15px; 
+			}
+		}
+
+		/* hero-section */
+		#hero{
+			/*background-color:dodgerblue;*/
+			background-image: url(hero.bg-1.gif);
+			background-size: cover;
+			background-position: center;
+			color:rgb(25, 57, 199);
+			padding:50px;
+			text-align:center;
+		}
+				@media (max-width: 768px) {
+    		#hero{
+        padding: 50px 15px;
+        text-align: center;
+    	}
+		}
+		h1.section-1{
+			text-align:center;
+		}
+		/* CTA buttons inside hero */
+.cta-buttons {
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+  }
+  
+  .cta-btn {
+	text-decoration: none;
+	padding: 14px 32px;
+	border-radius: 50px;
+	font-size: 16px;
+	font-weight: 600;
+	transition: 0.3s ease;
+  }
+  
+  /* Consultation button */
+  .consultation-btn {
+	background: linear-gradient(135deg, #ea7600, #ff9800);
+	color: white;
+	box-shadow: 0 8px 20px rgba(234, 118, 0, 0.4);
+  }
+  
+  .consultation-btn:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 25px rgba(234, 118, 0, 0.6);
+  }
+  
+  /* Portfolio button */
+  .portfolio-btn {
+	
+	background: rgb(0,0,0,0.5);
+	color: #FFFFFF;
+	border: solid 2px rgb(0,0,0.5);
+  }
+  
+  .portfolio-btn:hover {
+	background: white;
+	color: black;
+	transform: translateY(-4px);
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+	.cta-buttons {
+	  flex-direction: column;
+	  align-items: center;
+	}
+  
+	.cta-btn {
+	  width: 80%;
+	  text-align: center;
+	}
+  }
+
+		/* about-section */
+		#about-box{
+			display:flex;
+			padding: 0px 50px;
+			gap:30px;
+		}
+		#about-text-box{
+			width:50%
+		}
+		#about-img-box{
+			width:50%
+		}
+		img#image{
+			width:100%
+		}
+
+		@media (max-width: 768px) {
+    #about-box{
+        padding: 0px 15px;
+        flex-wrap: wrap;
+    }
+
+    #about-text-box,
+	#about-img-box{
+        width: 100%;
+    }
+
+    #about-text-box{
+        text-align: justify;
+    }
+}
+/* service-section */
+#services-box{
+	display: flex;
+	padding: 0px 50px;
+	gap: 30px;
+}
+.service-box{
+	width: 33.33%;
+}
+img.service-image{
+	width: 100%;
+}
+h1.section-tittle{
+	text-align: center;
+}
+
+@media(max-width: 768px){
+	#services-box{
+		padding: 0px 15px;
+		flex-wrap: wrap;
+	}
+	.service-box{
+		width: 100%;
+	}
+}
+/*product*/
+#production-box{
+display: flex;
+	padding: 0px 50px;
+	gap: 30px;
+}
+.product-box{
+	width: 33.33%;
+}
+img.service-image{
+	width: 100%;
+}
+h1.section-tittle{
+	text-align: center;
+}
+@media(max-width: 768px){
+	#production-box{
+		padding: 0px 15px;
+		flex-wrap: wrap;
+	}
+	.product-box{
+		width: 100%;
+	}
+	#production-box{
+		text-align: justify;
+	}
+}
